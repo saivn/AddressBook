@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.TextFlow?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controll.Controller">
+   <children>
+      <TabPane fx:id="tabHumans" layoutX="39.0" layoutY="99.0" prefHeight="175.0" prefWidth="23.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="constA" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="А" />
+            <Tab fx:id="constA1" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Б" />
+            <Tab fx:id="constA2" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="В" />
+            <Tab fx:id="constA3" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Г" />
+            <Tab fx:id="constA4" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Д" />
+            <Tab fx:id="constA5" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Е" />
+            <Tab fx:id="constA6" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ж" />
+            <Tab fx:id="constA7" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="З" />
+            <Tab fx:id="constA8" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="И" />
+            <Tab fx:id="constA9" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="К" />
+            <Tab fx:id="constA10" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Л" />
+            <Tab fx:id="constA11" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="М" />
+            <Tab fx:id="constA12" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Н" />
+            <Tab fx:id="constA13" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="О" />
+           <Tab fx:id="constA14" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="П" />
+           <Tab fx:id="constA15" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Р" />
+           <Tab fx:id="constA16" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="С" />
+           <Tab fx:id="constA17" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Т" />
+           <Tab fx:id="constA18" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="У" />
+           <Tab fx:id="constA19" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ф" />
+           <Tab fx:id="constA21" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Х" />
+           <Tab fx:id="constA22" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ц" />
+           <Tab fx:id="constA23" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ч" />
+           <Tab fx:id="constA24" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ш" />
+           <Tab fx:id="constA25" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Щ" />
+           <Tab fx:id="constA26" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Э" />
+           <Tab fx:id="constA27" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Ю" />
+           <Tab fx:id="constA28" onSelectionChanged="#onSelection" style="-fx-rotate: 90;" text="Я" />
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+      <Pane fx:id="paneView" layoutX="286.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-color: #CCFF99;" AnchorPane.leftAnchor="286.0">
+         <children>
+            <Label fx:id="inf2" layoutX="76.0" layoutY="51.0" text="Имя" />
+            <Label fx:id="inf3" layoutX="50.0" layoutY="66.0" text="Отчество" />
+            <Label fx:id="inf4" layoutX="31.0" layoutY="108.0" text="тел. дом" />
+            <Label fx:id="inf5" layoutX="32.0" layoutY="125.0" text="тел. раб" />
+            <Label fx:id="inf6" layoutX="35.0" layoutY="142.0" text="e-mail" />
+            <Label fx:id="inf7" layoutX="35.0" layoutY="159.0" text="skype" />
+            <Line endX="100.0" layoutX="101.0" layoutY="100.0" startX="-100.0" />
+            <VBox layoutX="101.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextFlow prefHeight="20.0" prefWidth="20.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <children>
+                        <Pane onMouseClicked="#onDubleClikedForChangRecord" prefHeight="20.0" prefWidth="98.0">
+                           <children>
+                              <Label fx:id="infFam" prefHeight="23.0" prefWidth="77.0">
+                                 <padding>
+                                    <Insets left="6.0" top="6.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="92.0">
+                                 <graphic>
+                                    <CustomTextField fx:id="famTextEdit" visible="false" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="20.0" prefWidth="20.0">
+                     <children>
+                        <Pane onMouseClicked="#onDubleClikedForChangRecord" prefHeight="20.0" prefWidth="98.0">
+                           <children>
+                              <Label fx:id="infNam" prefHeight="23.0" prefWidth="77.0">
+                                 <padding>
+                                    <Insets left="6.0" top="6.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="1.0" prefWidth="92.0">
+                                 <graphic>
+                                    <CustomTextField fx:id="namTextEdit" prefHeight="7.0" prefWidth="92.0" visible="false" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="20.0" prefWidth="20.0">
+                     <children>
+                        <Pane onMouseClicked="#onDubleClikedForChangRecord" prefHeight="20.0" prefWidth="98.0">
+                           <children>
+                              <Label fx:id="infParnt" prefHeight="23.0" prefWidth="77.0">
+                                 <padding>
+                                    <Insets left="6.0" top="6.0" />
+                                 </padding>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="92.0">
+                                 <graphic>
+                                    <CustomTextField fx:id="parTextEdit" visible="false" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </TextFlow>
+               </children>
+            </VBox>
+            <Pane fx:id="infImgHuman" layoutX="9.0" layoutY="11.0" onMouseClicked="#onImgFaceOpenFileDialog" prefHeight="40.0" prefWidth="40.0" style="-fx-background-image: url('');">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Pane>
+            <Label fx:id="inf1" layoutX="51.0" layoutY="33.0" text="Фамилия" />
+         </children>
+      </Pane>
+      <Label layoutX="45.0" layoutY="43.0" text="Поиск" />
+
+      <TextField fx:id="textSearch" layoutX="90.0" layoutY="40.0" onAction="#onSearch" onKeyReleased="#onSearchReleased" style="-fx-background-radius: 20;" styleClass="button" />
+      <ImageView fx:id="imageView" fitHeight="17.0" fitWidth="23.0" layoutX="215.0" layoutY="43.0" onMouseClicked="#onMouseImageView" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('lupa.png');">
+         <image>
+            <Image url="@../images/lupa.png" />
+         </image></ImageView>
+      <TableView fx:id="tableHumans" layoutX="62.0" layoutY="75.0" onKeyPressed="#onKeyPressedTableView" onMouseClicked="#onMouseSelectionTableView" prefHeight="200.0" prefWidth="219.0">
+        <columns>
+          <TableColumn fx:id="familyTableColumn" prefWidth="75.0" text="Фамилия" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="75.0" text="Имя" />
+          <TableColumn fx:id="parentTableColumn" prefWidth="75.0" text="Отчество" />
+        </columns>
+      </TableView>
+      <Button layoutX="499.0" layoutY="85.0" mnemonicParsing="false" onAction="#onAddRecord" text="Добавить" />
+      <Button layoutX="499.0" layoutY="121.0" mnemonicParsing="false" onAction="#onDeleteRecord" prefHeight="25.0" prefWidth="70.0" text="Удалить" />
+      <Button layoutX="499.0" layoutY="163.0" mnemonicParsing="false" onAction="#onChangRecord" text="Изменить" />
+      <Pane fx:id="paneCloseEditRecord" layoutX="493.0" layoutY="197.0" prefHeight="77.0" prefWidth="108.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f805" height="77.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+            <Label layoutX="4.0" layoutY="14.0" text="Сохранить запись?" />
+            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#closeEditRecord" text="Да" />
+            <Button layoutX="52.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#noClosedEditRecord" text="Нет" />
+         </children>
+      </Pane>
+      <MenuBar layoutX="1.0" layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="true" text="_Файл">
+            <items>
+              <MenuItem mnemonicParsing="true" onAction="#onOpenFile" text="_Открыть">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/openfile.JPG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="true" onAction="#onWriteFile" text="_Записать как">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="S" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/savefile.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="true" onAction="#onFileExit" text="_Выйти">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="E" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit.JPG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+            </items>
+               <accelerator>
+                  <KeyCodeCombination alt="DOWN" code="F" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+          </Menu>
+          <Menu mnemonicParsing="true" text="_Редактировать">
+            <items>
+              <MenuItem mnemonicParsing="true" onAction="#onAddRecord" text="_Добавить" />
+                  <MenuItem mnemonicParsing="true" onAction="#onDeleteRecord" text="_Удалить" />
+                  <MenuItem mnemonicParsing="true" onAction="#onChangRecord" text="_Изменить" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="true" text="_Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onAboutMy" text="Контакты" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
